@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mohit's-Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/@splinetool/viewer@1.12.98/build/spline-viewer.js"
+    ></script>
+  </head>
+  <body class="dark-theme">
+    <img class="image-gradient" src="gradient.png" alt="gradient" />
+    <div class="layer-blur"></div>
+
+    <header>
+      <div class="logo-group">
+        <h1 class="logo">Welcome</h1>
+        <span class="hand">👋</span>
+      </div>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#about" onclick="closeMobileMenu()">About</a>
+        <a href="#project" onclick="closeMobileMenu()">Project</a>
+        <a href="#work" onclick="closeMobileMenu()">Work</a>
+        <a href="#contact" onclick="closeMobileMenu()">Contact</a>
+      </nav>
+
+      <div class="header-controls">
+        <!-- Dark / Bright Theme Toggle -->
+        <button
+          class="theme-toggle-btn"
+          id="themeToggleBtn"
+          aria-label="Toggle Theme"
+        >
+          <span id="themeIcon">☀️</span>
+        </button>
+        <!-- Mobile Menu Toggle Button -->
+        <button
+          class="mobile-menu-btn"
+          id="mobileMenuBtn"
+          aria-label="Toggle Navigation"
+        >
+          ☰
+        </button>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <main class="container">
+      <div class="content">
+        <div class="tag-box">
+          <div class="tag">CREATIVE &wedbar;</div>
+        </div>
+        <h1>Video Editor<br />Cinematographer<br />Content Creator</h1>
+        <p class="description">
+          Cinematic video editor turning ideas into visually compelling content.
+        </p>
+        <div class="buttons">
+          <a href="#project" class="btn-get-started">Demo</a>
+          <a href="#contact" class="btn-signing-main">Get Started</a>
+        </div>
+      </div>
+
+      <spline-viewer
+        class="robot3d"
+        url="https://prod.spline.design/Mq4RiUj7GN2NSA6M/scene.splinecode"
+      ></spline-viewer>
+    </main>
+
+    <hr class="section-divider" />
+
+    <!-- About Section -->
+    <section id="about" class="section">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-container">
+        <div class="about-photo-wrapper">
+          <img
+            class="about-photo"
+            src="https://drive.google.com/thumbnail?id=1ZB6QuikEQZnHtkEOjXyCrD3ADwPF5Rv7&sz=w1000"
+            alt="Mohit Profile Photo"
+          />
+        </div>
+        <div class="about-text">
+          <h3>Hi, I'm Mohit Singh Mahra</h3>
+          <p>
+            I am a passionate frontend developer and designer focused on
+            crafting visually engaging, highly functional web applications. I
+            specialize in merging interactive 3D elements with clean, responsive
+            user interfaces.
+          </p>
+
+          <!-- Instagram Link Button -->
+          <a
+            href="https://www.instagram.com/logical_mahra"
+            target="_blank"
+            class="about-insta-btn"
+          >
+            <svg
+              class="insta-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+            >
+              <path
+                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
+              />
+            </svg>
+            <span>Follow on Instagram</span> ↗
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <hr class="section-divider" />
+
+    <!-- Project Section with Floating Video Bar -->
+    <section id="project" class="section">
+      <h2 class="section-title">Featured Projects</h2>
+
+      <div class="video-bar-wrapper">
+        <button class="nav-arrow left-arrow" id="leftScrollBtn">
+          &#10094;
+        </button>
+
+        <div class="video-bar-container" id="videoBar">
+          <div
+            class="video-card"
+            data-video="https://drive.google.com/file/d/1g6UXEtuI7ZGqHG5-ewCQGckohVdFSU2B/preview"
+          >
+            <div class="video-thumbnail">
+              <img
+                src="https://drive.google.com/thumbnail?id=1g6UXEtuI7ZGqHG5-ewCQGckohVdFSU2B&sz=w800"
+                alt="Video Project 1"
+              />
+              <div class="play-btn-overlay">▶</div>
+            </div>
+            <h4>
+              Your laptop called... it was tired of looking boring 👀_So I gave
+              it the perfect upgrade with stickers from StickItUp⁠ 🔥
+            </h4>
+          </div>
+
+          <div
+            class="video-card"
+            data-video="https://drive.google.com/file/d/1n-vcy5cp8-x2oESZm4tAcowLjmDkwCEC/preview"
+          >
+            <div class="video-thumbnail">
+              <img
+                src="https://drive.google.com/thumbnail?id=1n-vcy5cp8-x2oESZm4tAcowLjmDkwCEC&sz=w800"
+                alt="Video Project 2"
+              />
+              <div class="play-btn-overlay">▶</div>
+            </div>
+            <h4>
+              Your edits look cheap because you skip this step__[Record on 4k] →
+              [Edit and increase sharpness and export in 4k 30 for cinematic]
+            </h4>
+          </div>
+
+          <div
+            class="video-card"
+            data-video="https://drive.google.com/file/d/1z1TnAo9fSjadEibDL51szE45MIqlKLHT/preview"
+          >
+            <div class="video-thumbnail">
+              <img
+                src="https://drive.google.com/thumbnail?id=1z1TnAo9fSjadEibDL51szE45MIqlKLHT&sz=w800"
+                alt="Video Project 3"
+              />
+              <div class="play-btn-overlay">▶</div>
+            </div>
+            <h4>
+              Your edits look cheap because you skip this step__[Record on 4k] →
+              [Edit and increase sharpness and export in 4k 30 for cinematic
+              video. ]
+            </h4>
+          </div>
+
+          <div
+            class="video-card"
+            data-video="https://drive.google.com/file/d/1VQWugH3r7TQinfdb_Pbuc6TcZFaJYZZV/preview"
+          >
+            <div class="video-thumbnail">
+              <img
+                src="https://drive.google.com/thumbnail?id=1VQWugH3r7TQinfdb_Pbuc6TcZFaJYZZV&sz=w800"
+                alt="Video Project 4"
+              />
+              <div class="play-btn-overlay">▶</div>
+            </div>
+            <h4>
+              Romanticizing the ordinary ✨_4K frames. Real moments. Zero
+              filter._You_re not watching a movie_ you_re in it 🎬_Drop a 🤍 if
+              you felt this__CinematicR
+            </h4>
+          </div>
+
+          <!-- Instagram Card -->
+          <div class="video-card insta-card" id="instaCard">
+            <div class="video-thumbnail">
+              <img
+                src="https://drive.google.com/thumbnail?id=1LGQsChXiLgYdxyFlXPU2oXqCXZ-sLg6j&sz=w1000"
+                alt="More on Instagram"
+              />
+              <div class="play-btn-overlay insta-overlay">
+                <svg
+                  class="insta-icon-card"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
+                  />
+                </svg>
+              </div>
+            </div>
+            <h4>View More Projects & Reels on Instagram ↗</h4>
+          </div>
+        </div>
+
+        <button class="nav-arrow right-arrow" id="rightScrollBtn">
+          &#10095;
+        </button>
+      </div>
+    </section>
+
+    <!-- Video Modal Player -->
+    <div class="video-modal" id="videoModal">
+      <div class="video-modal-content">
+        <span class="close-btn" id="closeModalBtn">&times;</span>
+        <iframe
+          id="activeDriveVideo"
+          src=""
+          allow="autoplay"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </div>
+
+    <hr class="section-divider" />
+
+    <!-- Work Section -->
+    <section id="work" class="section">
+      <h2 class="section-title">Work Experience</h2>
+      <div class="cards-grid">
+        <div class="card">
+          <h3>Video Editor/ Cinematographer/ Content Creator</h3>
+          <span class="work-date">2021 - Present</span>
+          <p>
+            I'm a content creator, cinematographer, and video editor passionate
+            about turning ideas into cinematic visual stories. I specialize in
+            creating engaging short-form content, combining creative
+            storytelling, dynamic camera work, and polished editing to produce
+            videos that capture attention and leave a lasting impression.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <hr class="section-divider" />
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+      <h2 class="section-title">Get In Touch</h2>
+      <div class="contact-container">
+        <p>
+          Have a project in mind or want to collaborate? Feel free to reach out!
+        </p>
+
+        <form class="contact-form" method="POST" action="https://formspree.io/f/xppaaqev">
+          <label>
+            Your name:
+            <input name="name" type="text" placeholder="John Doe" required />
+          </label>
+          <label>
+            Your email:
+            <input name="email" type="email" placeholder="john@example.com" required />
+          </label>
+          <label>
+            Your message:
+            <textarea name="message" rows="5" placeholder="Write your message here..." required></textarea>
+          </label>
+          <button type="submit" class="btn-signing-main">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- External EmailJS Library & Custom Script File -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

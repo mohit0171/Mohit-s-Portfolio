@@ -670,6 +670,11 @@ nav.nav-links a:hover {
     .nav-arrow {
         display: none;
     }
+    @media (max-width: 768px) {
+  spline-viewer {
+    display: none !important;
+  }
+}
 
     .video-modal-content {
         height: 300px;
